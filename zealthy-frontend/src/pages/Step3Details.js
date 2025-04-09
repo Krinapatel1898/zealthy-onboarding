@@ -10,6 +10,7 @@ const Step3Details = () => {
     State: '',
     Zip: '',
   });
+  
 
   const navigate = useNavigate();
   const userId = localStorage.getItem('userId');
@@ -19,9 +20,10 @@ const Step3Details = () => {
       try {
         const res = await axios.get('http://localhost:3001/admin/config');
         const step3Fields = res.data.filter(c => c.PageNumber === 3);
-        setComponents(step3Fields.map(c => c.ComponentName));
+        const fieldList = step3Fields.map(c => c.ComponentName);
+        setComponents(fieldList);
       } catch (err) {
-        console.error('Error loading admin config:', err);
+        console.error('Admin config fetch failed:', err);
       }
     };
 
@@ -58,6 +60,32 @@ const Step3Details = () => {
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4 text-left">
+          {components.includes('about_me') && (
+            <div>
+              <label className="block mb-1">About Me</label>
+              <textarea
+                name="AboutMe"
+                rows="4"
+                className="w-full bg-gray-900 border border-gray-600 text-white rounded px-3 py-2"
+                onChange={handleChange}
+                value={formData.AboutMe}
+              />
+            </div>
+          )}
+
+          {components.includes('birthdate') && (
+            <div>
+              <label className="block mb-1">Birthdate</label>
+              <input
+                type="date"
+                name="Birthdate"
+                className="w-full bg-gray-900 border border-gray-600 text-white rounded px-3 py-2"
+                onChange={handleChange}
+                value={formData.Birthdate}
+              />
+            </div>
+          )}
+
           {components.includes('address') && (
             <>
               <div>
