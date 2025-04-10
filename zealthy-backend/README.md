@@ -26,10 +26,6 @@ cd zealthy-onboarding/zealthy-backend
 
 ---
 
-### ✅ Output After Fix
-
-This will now render as:
-
 ### 2. 📦 Install Dependencies
 
 ```bash
