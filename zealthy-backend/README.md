@@ -58,6 +58,15 @@ Run the following command to start your backend server:
 
 ```bash
 node index.js
+```
 
+## 📁 Folder Structure
 
-
+<pre lang="markdown">
+zealthy-backend/
+├── index.js                  # Main backend file with Express routes and DB logic
+├── package.json              # Backend dependencies and scripts
+├── database/                 
+│   └── zealthy_database.sql  # SQL script to create Users & AdminConfig tables
+└── README.md                 # Project instructions and setup guide
+</pre>
