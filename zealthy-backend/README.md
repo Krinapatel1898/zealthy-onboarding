@@ -33,4 +33,22 @@ Install all required Node.js packages:
 
 ```bash
 npm install
+```
+
+### 🔧 3. Configure SQL Server Connection
+
+Edit your `index.js` file to provide the correct SQL credentials:
+
+```js
+const config = {
+  user: 'your_sql_username',
+  password: 'your_password',
+  server: 'localhost', // or your SQL Server instance
+  database: 'ZealthyDB',
+  options: {
+    encrypt: false,
+    trustServerCertificate: true
+  }
+};
+
 
