@@ -1,4 +1,4 @@
-# 🖼️ Zealthy Frontend – Onboarding UI
+#  Zealthy Frontend – Onboarding UI
 
 This is the **React + Tailwind CSS** frontend for the Zealthy onboarding portal. It guides users through a dynamic onboarding experience across multiple steps, styled with a clean and modern UI.
 
