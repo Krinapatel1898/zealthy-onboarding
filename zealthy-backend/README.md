@@ -24,4 +24,10 @@ It powers user registration, a multi-step onboarding wizard, admin customization
 git clone https://github.com/your-username/zealthy-onboarding.git
 cd zealthy-onboarding/zealthy-backend
 
+### 📦 2. Install Dependencies
+
+Install all required Node.js packages:
+
+```bash
+npm install
 
