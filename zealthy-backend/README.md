@@ -50,5 +50,14 @@ const config = {
     trustServerCertificate: true
   }
 };
+```
+
+### ▶️ 4. Start the Backend Server
+
+Run the following command to start your backend server:
+
+```bash
+node index.js
+
 
 
