@@ -24,9 +24,12 @@ It powers user registration, a multi-step onboarding wizard, admin customization
 git clone https://github.com/your-username/zealthy-onboarding.git
 cd zealthy-onboarding/zealthy-backend
 
+
+Use this (separate the heading from the code block):
 ```markdown
 ### 2. 📦 Install Dependencies
 
 ```bash
 npm install
+
 
