@@ -28,6 +28,6 @@ cd zealthy-onboarding/zealthy-backend
 
 Install all required Node.js packages:
 
-```bash
+```bash ... ```
 npm install
 
